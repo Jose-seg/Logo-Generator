@@ -1,0 +1,27 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jose-seg/Logo-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jose-seg/Logo-Generator/issues"
+  },
+  "homepage": "https://github.com/Jose-seg/Logo-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "svg.js": "^2.7.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
