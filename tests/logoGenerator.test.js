@@ -1,5 +1,4 @@
-const { Circle } = require('@svgdotjs/svg.js');
-const { generateSVG } = require('../logo-generator.mjs');
+const { generateSVG } = require('../logo-generator');
 // Here we start with the first test which is for the circle option and its properties
 describe('generateSVG', () => {
     test('generates a valid SVG with the given options', () => {

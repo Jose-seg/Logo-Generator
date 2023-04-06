@@ -6,9 +6,9 @@
   "scripts": {
     "test": "jest"
   },
-    "jest": {
-      "testMatch": ["<rootDir>/tests/**/*.test.js"]
-    },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jose-seg/Logo-Generator.git"
@@ -27,6 +27,8 @@
     "svgdom": "^0.1.13"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "@babel/preset-env": "^7.21.4",
+    "jest": "^29.5.0",
+    "jest-esm-transformer": "^1.0.0"
   }
 }

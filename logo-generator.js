@@ -1,6 +1,6 @@
 // imports the packages we will use for this backend app
-import { SVG, registerWindow } from '@svgdotjs/svg.js';
-import { createSVGWindow } from 'svgdom';
+const { SVG, registerWindow } = require('@svgdotjs/svg.js');
+const {createSVGWindow} = require('svgdom');
 // function for generating the svg according to the user's selected options
 function generateSVG(options) {
     const {color, shape, text} = options;
@@ -34,4 +34,4 @@ function generateSVG(options) {
     return canvas.svg();
 }
 // here we export the generate svg function to import it to the index.mjs
-export { generateSVG };
+module.exports = { generateSVG };

@@ -1,10 +1,10 @@
-import fs from 'fs'; // imports the fs package needed to create the svg file
+const fs = require('fs'); // imports the fs package needed to create the svg file
 
-import { generateSVG } from './logo-generator.mjs'; // imports the code that will generate the shape, color, and text according to the prompts
+const { generateSVG } = require('./logo-generator'); // imports the code that will generate the shape, color, and text according to the prompts
 
 //
 async function main() {
-    const inquirer = await import('inquirer'); // I imported the inquirer using await because the original way I did this didn't work for me
+  const inquirer = await import('inquirer');
 // prompt questions the user will be asked before the logo is generated
     const questions = [
       {

@@ -19,3 +19,6 @@ will be named according to the response from the user. This app also provides a 
 Repo: https://github.com/Jose-seg/Logo-Generator
 
 ## Video Link
+Testing portion: https://drive.google.com/file/d/1UfDmx-GtnBsMedjCoD_0P_kK2C6sXhv2/view
+
+Generate Svg: https://drive.google.com/file/d/1n6yO6rTbies00ND7TtKmwoyAkOoBv8cj/view
