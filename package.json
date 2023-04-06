@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+    "jest": {
+      "testMatch": ["<rootDir>/tests/**/*.test.js"]
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jose-seg/Logo-Generator.git"
@@ -18,8 +21,10 @@
   },
   "homepage": "https://github.com/Jose-seg/Logo-Generator#readme",
   "dependencies": {
+    "@svgdotjs/svg.js": "^3.1.2",
     "inquirer": "^9.1.5",
-    "svg.js": "^2.7.1"
+    "svg-parser": "^2.0.4",
+    "svgdom": "^0.1.13"
   },
   "devDependencies": {
     "jest": "^29.5.0"

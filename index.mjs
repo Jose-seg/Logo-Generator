@@ -1,8 +1,10 @@
-const fs = require('fs');
-const inquirer = require('inquirer');
-const {generateSVG} = require('./logo-generator');
+import fs from 'fs';
+
+import { generateSVG } from './logo-generator.mjs';
 
 async function main() {
+    const inquirer = await import('inquirer');
+
     const questions = [
       {
         type: 'list',
@@ -28,7 +30,7 @@ async function main() {
       },
     ];
 
-    const answers = await inquirer.prompt(questions);
+    const answers = await inquirer.default.prompt(questions);
     const svg = generateSVG(answers);
 
     fs.writeFileSync(`${answers.filename}.svg`, svg);
