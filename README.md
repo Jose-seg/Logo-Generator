@@ -15,6 +15,14 @@ will be named according to the response from the user. This app also provides a 
 
 ![image](https://user-images.githubusercontent.com/122575280/230263339-b66a474b-3d2f-4c0d-b6fa-83659cb36a07.png)
 
+## Installations
+
+-npm i svg (to install svg packages)
+-npm i inquirer (to get and display our prompts)
+-require fs
+-jest
+
+
 ## GitHub
 Repo: https://github.com/Jose-seg/Logo-Generator
 
