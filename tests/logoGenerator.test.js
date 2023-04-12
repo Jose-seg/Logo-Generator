@@ -11,7 +11,11 @@ describe('LogoGenerator', () => {
         };
 
         const svg = logoGenerator.generateSVG(options);
-        expect(svg).toContain
+        expect(svg).toContain('<svg');
+        expect(svg).toContain('</svg>');
+        expect(svg).toContain(`<circle r="100" cx="100" cy="100" fill="${options.color}"></circle>`);
+        expect(svg).toContain(`<text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="24" fill="white">${options.text}</text>`);
     });
 
+    // tests for square and traingle go here
 });
