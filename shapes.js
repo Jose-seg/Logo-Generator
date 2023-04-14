@@ -10,24 +10,25 @@ class Circle {
 }
 
 class Square {
-    constructor(sideLength, color) {
-        this.sideLength = sideLength;
+    constructor(width, height, color) {
+        this.width = width;
+        this.height = height;
         this.color = color;
     }
 
     render() {
-        return `<rect width="${this.sideLength}" height="${this.sideLength}" fill="${this.color}"></rect>`;
+        return `<rect width="${this.width}" height="${this.height}" fill="${this.color}"></rect>`;
     }
 }
 
 class Triangle {
-    constructor(baseLength, color) {
-        this.baseLength = baseLength;
+    constructor(points, color) {
+        this.points = points;
         this.color = color;
     }
 
     render () {
-        return `<polygon points="${this.baseLength / 2},0 ${this.baseLength},${this.baseLength} 0,${this.baseLength}" fill="${this.color}"></polygon>`;
+        return `<polygon points="${this.points.map(point => point.join('')).join('')}" fill="${this.color}"></polygon>`;
     }
 }
 

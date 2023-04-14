@@ -1,5 +1,5 @@
 const fs = require('fs'); // imports the fs package needed to create the svg file
-const inquirer = require('inquirer');
+
 const { LogoGenerator } = require('./logo-generator.js'); // imports the code that will generate the shape, color, and text according to the prompts
 
 //
