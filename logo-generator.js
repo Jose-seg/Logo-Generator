@@ -1,4 +1,4 @@
-const { Circle, Square, Triangle } = require('./shapes.js');
+import{ Circle, Square, Triangle } from './shapes.js';
 
 class LogoGenerator {
     constructor(width, height) {
@@ -36,4 +36,4 @@ class LogoGenerator {
     }
 }
 
-module.exports = {LogoGenerator};
+export {LogoGenerator};

@@ -1,9 +1,9 @@
-const fs = require('fs'); // imports the fs package needed to create the svg file
+import fs from 'fs'; // imports the fs package needed to create the svg file
 
-const { LogoGenerator } = require('./logo-generator.js'); // imports the code that will generate the shape, color, and text according to the prompts
+import{ LogoGenerator } from './logo-generator.js'; // imports the code that will generate the shape, color, and text according to the prompts
+import inquirer from 'inquirer';
 
-//
-async function main() {
+  async function main() {
 // prompt questions the user will be asked before the logo is generated
     const questions = [
       {
@@ -40,3 +40,4 @@ async function main() {
 }
 
 main();
+

@@ -1,3 +1,4 @@
+// Using class method for the Circle Shape
 class Circle {
     constructor(radius, color) {
         this.radius = radius;
@@ -8,7 +9,7 @@ class Circle {
         return `<circle r="${this.radius}" cx="${this.radius}" cy="${this.radius}" fill="${this.color}"></circle>`;
     }
 }
-
+// Using class method for the Square Shape
 class Square {
     constructor(width, height, color) {
         this.width = width;
@@ -20,7 +21,7 @@ class Square {
         return `<rect width="${this.width}" height="${this.height}" fill="${this.color}"></rect>`;
     }
 }
-
+// Using class method for the Triangle Shape
 class Triangle {
     constructor(points, color) {
         this.points = points;
@@ -28,8 +29,8 @@ class Triangle {
     }
 
     render () {
-        return `<polygon points="${this.points.map(point => point.join('')).join('')}" fill="${this.color}"></polygon>`;
+        return `<polygon points="${this.points.map(point => point.join(',')).join(' ')}" fill="${this.color}"></polygon>`;
     }
 }
 
-module.exports = { Circle, Square, Triangle };
+export { Circle, Square, Triangle };
